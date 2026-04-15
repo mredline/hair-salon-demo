@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow Hair Studio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pricing {
+  background: #fff;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.pricing h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Glow Hair Studio</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay">
+    <h2>Beautiful Hair. Confident You.</h2>
+    <p>Professional styling, coloring, and treatments in a relaxing environment.</p>
+    <a class="btn" href="#contact">Book an Appointment</a>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+
+    <div class="card">
+      <h3>Haircuts</h3>
+      <p>Modern cuts tailored to your style and face shape.</p>
+    </div>
+
+    <div class="card">
+      <h3>Color & Highlights</h3>
+      <p>From natural tones to bold transformations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Hair Treatments</h3>
+      <p>Deep conditioning, repair, and smoothing treatments.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <h2>Pricing</h2>
+
+  <div class="pricing">
+    <h3>Haircuts</h3>
+    <p>Women: $35 – $60</p>
+    <p>Men: $20 – $40</p>
+
+    <h3>Color Services</h3>
+    <p>Full Color: $70 – $120</p>
+    <p>Highlights: $90 – $150</p>
+
+    <h3>Treatments</h3>
+    <p>Deep Conditioning: $30 – $60</p>
+    <p>Keratin Treatment: $120 – $250</p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>📍 123 Main Street, Your City</p>
+  <p>📞 (555) 123-4567</p>
+  <p>📧 contact@glowhairstudio.com</p>
+
+  <a class="btn" href="#">Call Now</a>
+</section>
+
+<footer>
+  <p>© 2026 Glow Hair Studio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
