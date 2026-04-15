@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fafafa;
+  background: #fafafa;
   color: #333;
 }
 
@@ -22,23 +22,17 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 30px;
-  letter-spacing: 1px;
-}
-
-nav {
-  margin-top: 10px;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 12px;
   text-decoration: none;
   font-size: 14px;
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -48,9 +42,9 @@ nav a {
 }
 
 .hero-overlay {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.55);
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .hero h2 {
@@ -58,19 +52,14 @@ nav a {
   margin: 0;
 }
 
-.hero p {
-  font-size: 18px;
-}
-
 .btn {
+  display: inline-block;
   margin-top: 15px;
-  padding: 12px 20px;
+  padding: 12px 18px;
   background: #ff4d6d;
   color: white;
-  border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
-  display: inline-block;
 }
 
 .section {
@@ -78,34 +67,52 @@ nav a {
   text-align: center;
 }
 
-.services {
+.services, .gallery, .reviews {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .card {
   background: white;
-  width: 250px;
+  width: 240px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.pricing {
-  background: #fff;
-  padding: 40px;
-  max-width: 600px;
-  margin: auto;
+.gallery img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: left;
 }
 
-.pricing h3 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
+.review {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+
+.booking {
+  background: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.booking input, .booking select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 footer {
@@ -124,70 +131,104 @@ footer {
   <h1>Glow Hair Studio</h1>
   <nav>
     <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#booking">Book</a>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-overlay">
-    <h2>Beautiful Hair. Confident You.</h2>
-    <p>Professional styling, coloring, and treatments in a relaxing environment.</p>
-    <a class="btn" href="#contact">Book an Appointment</a>
+    <h2>Look & Feel Your Best</h2>
+    <p>Premium hair styling, coloring, and treatments</p>
+    <a class="btn" href="#booking">Book Appointment</a>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services" class="section">
   <h2>Our Services</h2>
   <div class="services">
 
     <div class="card">
       <h3>Haircuts</h3>
-      <p>Modern cuts tailored to your style and face shape.</p>
+      <p>Modern styles tailored to you</p>
     </div>
 
     <div class="card">
       <h3>Color & Highlights</h3>
-      <p>From natural tones to bold transformations.</p>
+      <p>From natural tones to bold transformations</p>
     </div>
 
     <div class="card">
-      <h3>Hair Treatments</h3>
-      <p>Deep conditioning, repair, and smoothing treatments.</p>
+      <h3>Treatments</h3>
+      <p>Repair, hydration & smoothing care</p>
+    </div>
+
+    <div class="card">
+      <h3>Styling</h3>
+      <p>Events, weddings & special occasions</p>
     </div>
 
   </div>
 </section>
 
-<section id="pricing" class="section">
-  <h2>Pricing</h2>
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>Our Work</h2>
+  <div class="gallery">
 
-  <div class="pricing">
-    <h3>Haircuts</h3>
-    <p>Women: $35 – $60</p>
-    <p>Men: $20 – $40</p>
+    <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388">
+    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e">
+    <img src="https://images.unsplash.com/photo-1526045478516-99145907023c">
 
-    <h3>Color Services</h3>
-    <p>Full Color: $70 – $120</p>
-    <p>Highlights: $90 – $150</p>
-
-    <h3>Treatments</h3>
-    <p>Deep Conditioning: $30 – $60</p>
-    <p>Keratin Treatment: $120 – $250</p>
   </div>
 </section>
 
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p>📍 123 Main Street, Your City</p>
-  <p>📞 (555) 123-4567</p>
-  <p>📧 contact@glowhairstudio.com</p>
+<!-- REVIEWS -->
+<section id="reviews" class="section">
+  <h2>Client Reviews</h2>
+  <div class="reviews">
 
-  <a class="btn" href="#">Call Now</a>
+    <div class="review">
+      “Best haircut I’ve ever had. Super professional and friendly!”
+    </div>
+
+    <div class="review">
+      “My color came out perfect. Highly recommend!”
+    </div>
+
+    <div class="review">
+      “Relaxing experience and amazing results every time.”
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+  <h2>Book an Appointment</h2>
+
+  <div class="booking">
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="Phone Number">
+
+    <select>
+      <option>Select Service</option>
+      <option>Haircut</option>
+      <option>Color</option>
+      <option>Treatment</option>
+      <option>Styling</option>
+    </select>
+
+    <input type="date">
+
+    <a class="btn" href="#">Submit Request</a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Glow Hair Studio. All rights reserved.</p>
+  <p>© 2026 Glow Hair Studio | 123 Main Street | (555) 123-4567</p>
 </footer>
 
 </body>
